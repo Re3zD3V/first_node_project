@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Re3zD3V/my_first_node_project#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "hjs": "0.0.6",
+    "hogan-middleware": "^0.2.2"
   }
 }
