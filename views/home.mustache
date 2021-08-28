@@ -7,22 +7,26 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{$ title }}My Awesome Site{{/ title }}</title>
-		<!-- {{$ stylesheets }}
-			<link rel="stylesheet" href="/assets/css/default.css">
-		{{/ stylesheets }} -->
+		{{$ stylesheets }}
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">		
+			<link rel="stylesheet" type="text/css" href="/styles/style.css">
+		{{/ stylesheets }}
 	</head>
-		<header>
+		<header class="container d-flex justify-content-center mb-5">
 			{{$ header }}
 				<h1>Welcome to My Awesome Site</h1>
 			{{/ header }}
 		</header>
-		<div id="content">
+		<div id="content" class="container d-flex flex-column align-items-center">
 			{{$ content }}
 				<p>Hello, World!</p>
+				<p>Created my first Node JS + Express project !!</p>
+				<img src="/images/nodejs_express.png" width="40%" alt="NodeJs_Express">
 			{{/ content }}
 		</div>
-		<!-- {{$ scripts }}
-			<script src="/assets/js/default.js"></script>
-		{{/ scripts }} -->
+		{{$ scripts }}
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+			<!-- // <script src="/assets/js/default.js"></script> -->
+		{{/ scripts }}
 	</body>
 </html>
